@@ -13,7 +13,7 @@ def resize():
 
         if os.path.isfile(location):
             im = Image.open(location)
-            imResize = im.resize((96, 96), Image.ANTIALIAS)
+            imResize = im.resize((72, 72), Image.ANTIALIAS)
             imResize.save(location, 'PNG', quality=90)
 
 
